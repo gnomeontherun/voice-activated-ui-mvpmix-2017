@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let demo of demos">
+    <a class="card clickable" [routerLink]="demo.link">
+      <div class="card-header">
+        {{demo.title}}
+      </div>
+      <div class="card-block">
+        <p class="card-text">
+          {{demo.description}}
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
