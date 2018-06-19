@@ -8,7 +8,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -28,11 +30,12 @@
     "clarity-ui": "^0.8.9",
     "core-js": "^2.4.1",
     "d3": "^4.7.1",
-    "firebase": "^3.0.0",
+    "firebase": "^4.5.1",
     "mutationobserver-shim": "^0.3.2",
     "reveal.js": "^3.4.1",
     "rxjs": "^5.1.0",
-    "zone.js": "^0.7.6"
+    "zone.js": "^0.7.6",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0-rc.0",
@@ -52,5 +55,6 @@
     "ts-node": "~2.0.0",
     "tslint": "~4.4.2",
     "typescript": "~2.0.0"
-  }
+  },
+  "snyk": true
 }
